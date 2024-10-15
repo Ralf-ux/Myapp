@@ -12,6 +12,8 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
 }
 .logo{
     
@@ -55,7 +57,7 @@ body{
     font-size: 15px;
 }
 
-.log{
+.login-button{
     padding: 8px;
     background-color: rgba(255, 255, 255, 0.674);
     border: none;
@@ -76,4 +78,46 @@ body{
 #viadeo>span{
     margin: 3px;
     font-size: 20px;
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.left-container{
+    background-color: whitesmoke;
+    height: 100vh;
+    width: 50px;
+    position: fixed;
+    z-index: 100;
+}
+.chats{
+    height: 100vh;
+    width: 35%;
+    background-color: rgba(102, 51, 153, 0.564);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.chat-contain{
+    background-color: red;
+    height: 80vh;
+    width: 97%;
+}
+
+.h2{
+    height: 60px;
+    color: green;
+    width: 100%;
+    margin-top: 60px;
+    z-index: 1;
+    text-align: center;
+    font-family: arial;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
